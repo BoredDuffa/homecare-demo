@@ -301,12 +301,16 @@ def _seed_occurrences(p):
 def solve(p: Problem, *, continuity=True, workers=4, random_seed=17, warm_start=True):
     if not isinstance(workers,int) or not 1<=workers<=4:raise ValueError('Solver workers must be between 1 and 4.')
     clock=perf_counter();seed=None;seed_seconds=0;initializer=None;attempts=[]
-    if warm_start and continuity and len(expand(p))>=100:
+    occurrence_count=len(expand(p))
+    if warm_start and continuity and occurrence_count>=40:
         restricted=_seed_problem(p)
         changed=any(a.fixed_carer!=b.fixed_carer for a,b in zip(p.visits,restricted.visits))
         seed=dict(status='UNKNOWN')
         if changed:
-            seed=_solve_model(restricted,continuity=True,workers=1,random_seed=random_seed,search_seconds=min(1,p.settings.time_limit*.2))
+            # Modest hosted CPUs also need an incumbent for the 56-visit
+            # presets. Keep the existing large-instance initialization budget.
+            seed_budget=min(2,p.settings.time_limit*.4) if occurrence_count<100 else min(1,p.settings.time_limit*.2)
+            seed=_solve_model(restricted,continuity=True,workers=1,random_seed=random_seed,search_seconds=seed_budget)
             attempts.append(dict(initializer='single_team',status=seed['status']))
             initializer='single_team'
         if seed['status'] not in ['FEASIBLE','OPTIMAL'] and perf_counter()-clock<min(2,p.settings.time_limit*.4):
