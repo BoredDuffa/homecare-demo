@@ -4,6 +4,7 @@ WORKDIR /app
 COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt && useradd --create-home homecare
 COPY --chown=homecare:homecare . .
+RUN install -d -o homecare -g homecare /app/.routing-cache /app/.geocoding-cache
 USER homecare
 EXPOSE 10000
 CMD ["sh", "-c", "exec uvicorn app:app --host 0.0.0.0 --port ${PORT:-10000} --workers 1"]
