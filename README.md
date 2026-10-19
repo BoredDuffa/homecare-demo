@@ -2,9 +2,9 @@
 
 [![Tests](https://github.com/BoredDuffa/homecare-demo/actions/workflows/tests.yml/badge.svg)](https://github.com/BoredDuffa/homecare-demo/actions/workflows/tests.yml)
 
-**[Project showcase](https://BoredDuffa.github.io/homecare-demo/) · [Deploy interactive demo on Render](https://render.com/deploy?repo=https%3A%2F%2Fgithub.com%2FBoredDuffa%2Fhomecare-demo) · [Hosting guide](DEPLOYMENT.md)**
+**[Live interactive demo](https://homecare-demo.onrender.com/) · [Project showcase](https://BoredDuffa.github.io/homecare-demo/) · [Deploy interactive demo on Render](https://render.com/deploy?repo=https%3A%2F%2Fgithub.com%2FBoredDuffa%2Fhomecare-demo) · [Hosting guide](DEPLOYMENT.md)**
 
-GitHub Pages hosts the showcase. Render (or another Docker host) runs the interactive Python app. The Render link opens deployment setup; it requires your own account and does not represent an already-running hosted instance.
+The interactive demo is hosted on Render at https://homecare-demo.onrender.com/. GitHub Pages hosts the showcase. The deployment link creates your own separate instance and requires your Render account. The free demo can sleep when idle; allow time for it to wake on the first visit.
 
 ![HomeCare roster and Dublin map](docs/assets/dublin-demo.jpg)
 

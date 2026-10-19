@@ -1,5 +1,9 @@
 # Host the HomeCare demo
 
+**Live interactive demo: https://homecare-demo.onrender.com/**
+
+The shared demo uses a Free Render web service. The instructions below deploy your own separate instance.
+
 GitHub stores the code, runs the tests and hosts the static project showcase at **https://BoredDuffa.github.io/homecare-demo/**. The interactive app needs a Python service because GitHub Pages cannot run the OR-Tools backend. Keep UI and backend together on one host; no CORS or separate API configuration is needed.
 
 ## Render
