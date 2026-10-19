@@ -1,0 +1,51 @@
+{
+  "at": "2026-10-18T22:38:48.678513+00:00",
+  "benchmark_config": {
+    "search_seconds": 5,
+    "workers": 1,
+    "holdout_base_seed": 9042026
+  },
+  "source_hashes": {
+    "scheduler_optimized.py": "999adb4484e8bb7624117b52a04d814df09f51ca1286f68b6121958a444ae0da",
+    "seed_planner.py": "345b753c249d67631fbaed131314ef8a58146c16cb8d5e5047ff2e8c1d33722c",
+    "domain.py": "fb3af385ee35b546b100151a47cea8185e04d8513970ba7d1eca27f06ca605a7",
+    "scheduler.py": "7397d5f7e8aea2d12c454da2d952fedceec15da0cd3df7aeb392796257cdf0aa"
+  },
+  "benchmark_sha256": "03de83abf96d405a46c952d1df62ae66dfe6aacf80aced1800c6dc528a362053",
+  "baseline_run": "homecare-10h-20261018T213047Z",
+  "baseline_protected_hashes_unchanged": true,
+  "baseline_cases_at_check": 1289,
+  "candidate_outcomes": {
+    "FEASIBLE": 24
+  },
+  "baseline_outcomes": {
+    "UNKNOWN": 3
+  },
+  "concurrent_workloads": [
+    "original baseline simulation",
+    "regression tests during some holdout cases"
+  ],
+  "tests": {
+    "isolated_candidate_distinct_passed": 51,
+    "integrated_app_passed": 47,
+    "unchanged_runner_tests_not_repeated_in_live_tree": 4
+  },
+  "live_api_check": {
+    "health": {
+      "ok": true,
+      "engine": "OR-Tools CP-SAT",
+      "version": "9.15.6755",
+      "scheduler_revision": "scalability-v2"
+    },
+    "status": "FEASIBLE",
+    "elapsed": 6.249,
+    "checked_visits": 200,
+    "validation_valid": true,
+    "source": "weekly_search",
+    "search": {
+      "seed_seconds": 1.052,
+      "seed_found": true,
+      "optimization_status": "FEASIBLE"
+    }
+  }
+}

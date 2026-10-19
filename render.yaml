@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: homecare-demo
+    runtime: docker
+    plan: free
+    region: frankfurt
+    dockerfilePath: ./Dockerfile
+    healthCheckPath: /api/health
+    envVars:
+      - key: HOMECARE_SOLVER_WORKERS
+        value: "1"

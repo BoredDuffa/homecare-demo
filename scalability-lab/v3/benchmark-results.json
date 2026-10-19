@@ -1,0 +1,1941 @@
+{
+  "fingerprint": {
+    "files": {
+      "simulation_v3.py": "c3873abb36b5b30f17209505796d37913503a22a30b9385d287d31916919564a",
+      "simulation.py": "81c4d2aff5e6681fab908d6cf207f95e1450d3f113d8714ae711d3631c032b04",
+      "scheduler.py": "7397d5f7e8aea2d12c454da2d952fedceec15da0cd3df7aeb392796257cdf0aa",
+      "scheduler_optimized.py": "0ce9be0fa3af40c2eb1e41c49a34a579da0822a4a284c49cfd4937d41c23fb51",
+      "seed_planner.py": "345b753c249d67631fbaed131314ef8a58146c16cb8d5e5047ff2e8c1d33722c",
+      "occurrence_planner.py": "327d479360fbbd057fc4d7ce26b6f643b06de77a3d8c8d9364ce8e6555b84ff9",
+      "advanced_cases.py": "43b74c989abde0a7b5fd03bfed17ffb051b75fa6098638f1a8f69cedbaa8ee7a",
+      "domain.py": "fb3af385ee35b546b100151a47cea8185e04d8513970ba7d1eca27f06ca605a7",
+      "examples.py": "4fdb104ef3e9110d1e21aa8e6557a6be1921941bd4bf917d3bfb170e2a4844f4",
+      "dublin_roads.json": "884468a0e8da5e7b5bf3c4dfdd5a7f5aa8ca7d20642da9339453aad34f86562e"
+    },
+    "python": "3.13.5 (v3.13.5:6cb20a219a8, Jun 11 2025, 12:23:45) [Clang 16.0.0 (clang-1600.0.26.6)]",
+    "ortools": "9.15.6755",
+    "pydantic": "2.14.1"
+  },
+  "v2_sha256": "999adb4484e8bb7624117b52a04d814df09f51ca1286f68b6121958a444ae0da",
+  "results": [
+    {
+      "profile": "locked_repair_16",
+      "seed": 20261019,
+      "revision": "v2",
+      "input_sha256": "0a927e2de3888377455c2b8f43933b783f6d30fe512e30a3bec5c19477979913",
+      "search_limit": 5,
+      "workers": 1,
+      "status": "UNKNOWN",
+      "elapsed_seconds": 5.7458,
+      "search": {
+        "seed_seconds": 1.504,
+        "seed_found": false,
+        "optimization_status": "UNKNOWN"
+      },
+      "objective": null,
+      "best_bound": null,
+      "validation": null,
+      "completed_locks": 120
+    },
+    {
+      "profile": "locked_repair_16",
+      "seed": 20261019,
+      "revision": "v3",
+      "input_sha256": "0a927e2de3888377455c2b8f43933b783f6d30fe512e30a3bec5c19477979913",
+      "search_limit": 5,
+      "workers": 1,
+      "status": "FEASIBLE",
+      "elapsed_seconds": 5.911,
+      "search": {
+        "seed_seconds": 0.63,
+        "seed_found": true,
+        "optimization_status": "FEASIBLE",
+        "initializer": "per_visit",
+        "attempts": [
+          {
+            "initializer": "per_visit",
+            "status": "OPTIMAL"
+          }
+        ]
+      },
+      "objective": 5807.0,
+      "best_bound": 3053.0,
+      "validation": {
+        "valid": true,
+        "errors": [],
+        "checked_visits": 200,
+        "metrics": {
+          "travel": 1575,
+          "idle": 1002,
+          "care": 4025,
+          "working": 6602,
+          "breaks": 390,
+          "visits": 200
+        },
+        "continuity": {
+          "client_0": [
+            "carer_0_0",
+            "carer_1_0"
+          ],
+          "client_1": [
+            "carer_0_1",
+            "carer_1_1"
+          ],
+          "client_2": [
+            "carer_0_2",
+            "carer_1_2"
+          ],
+          "client_3": [
+            "carer_0_3",
+            "carer_1_3"
+          ],
+          "client_4": [
+            "carer_0_0",
+            "carer_1_0"
+          ],
+          "client_5": [
+            "carer_0_1",
+            "carer_1_1"
+          ],
+          "client_6": [
+            "carer_0_2",
+            "carer_1_2"
+          ],
+          "client_7": [
+            "carer_0_3",
+            "carer_1_3"
+          ],
+          "client_8": [
+            "carer_0_0",
+            "carer_1_0"
+          ],
+          "client_9": [
+            "carer_0_1",
+            "carer_1_1"
+          ],
+          "client_10": [
+            "carer_0_2",
+            "carer_1_2"
+          ],
+          "client_11": [
+            "carer_0_3",
+            "carer_1_3"
+          ],
+          "client_12": [
+            "carer_0_0",
+            "carer_1_0"
+          ],
+          "client_13": [
+            "carer_0_1",
+            "carer_1_1"
+          ],
+          "client_14": [
+            "carer_0_2",
+            "carer_1_2"
+          ],
+          "client_15": [
+            "carer_0_3",
+            "carer_1_3"
+          ],
+          "client_16": [
+            "carer_0_0",
+            "carer_1_0"
+          ],
+          "client_17": [
+            "carer_0_1",
+            "carer_1_1"
+          ],
+          "client_18": [
+            "carer_0_2",
+            "carer_1_2"
+          ],
+          "client_19": [
+            "carer_0_3",
+            "carer_1_3"
+          ],
+          "client_20": [
+            "carer_0_0",
+            "carer_1_0"
+          ],
+          "client_21": [
+            "carer_0_1",
+            "carer_1_1"
+          ],
+          "client_22": [
+            "carer_0_2",
+            "carer_1_2"
+          ],
+          "client_23": [
+            "carer_0_3",
+            "carer_1_3"
+          ],
+          "client_24": [
+            "carer_0_0",
+            "carer_1_0"
+          ],
+          "client_25": [
+            "carer_0_1",
+            "carer_1_1"
+          ],
+          "client_26": [
+            "carer_0_2",
+            "carer_1_2"
+          ],
+          "client_27": [
+            "carer_0_3",
+            "carer_1_3"
+          ],
+          "client_28": [
+            "carer_0_0",
+            "carer_1_0"
+          ],
+          "client_29": [
+            "carer_0_1",
+            "carer_1_1"
+          ],
+          "client_30": [
+            "carer_0_2",
+            "carer_1_2"
+          ],
+          "client_31": [
+            "carer_0_3",
+            "carer_1_3"
+          ],
+          "client_32": [
+            "carer_0_0",
+            "carer_1_0"
+          ],
+          "client_33": [
+            "carer_0_1",
+            "carer_1_1"
+          ],
+          "client_34": [
+            "carer_0_2",
+            "carer_1_2"
+          ],
+          "client_35": [
+            "carer_0_3",
+            "carer_1_3"
+          ],
+          "client_36": [
+            "carer_0_0",
+            "carer_1_0"
+          ],
+          "client_37": [
+            "carer_0_1",
+            "carer_1_1"
+          ],
+          "client_38": [
+            "carer_0_2",
+            "carer_1_2"
+          ],
+          "client_39": [
+            "carer_0_3",
+            "carer_1_3"
+          ]
+        },
+        "weekly_minutes": {
+          "carer_0_0": 1014,
+          "carer_0_1": 874,
+          "carer_0_2": 984,
+          "carer_0_3": 906,
+          "carer_1_0": 789,
+          "carer_1_1": 605,
+          "carer_1_2": 806,
+          "carer_1_3": 624
+        }
+      },
+      "completed_locks": 120
+    },
+    {
+      "profile": "locked_repair_16",
+      "seed": 20261020,
+      "revision": "v2",
+      "input_sha256": "ed361f28ac4484a74fafce8f5293dd4be8306568c9e865c3bbaf570fbf45dde1",
+      "search_limit": 5,
+      "workers": 1,
+      "status": "UNKNOWN",
+      "elapsed_seconds": 5.4524,
+      "search": {
+        "seed_seconds": 1.453,
+        "seed_found": false,
+        "optimization_status": "UNKNOWN"
+      },
+      "objective": null,
+      "best_bound": null,
+      "validation": null,
+      "completed_locks": 120
+    },
+    {
+      "profile": "locked_repair_16",
+      "seed": 20261020,
+      "revision": "v3",
+      "input_sha256": "ed361f28ac4484a74fafce8f5293dd4be8306568c9e865c3bbaf570fbf45dde1",
+      "search_limit": 5,
+      "workers": 1,
+      "status": "FEASIBLE",
+      "elapsed_seconds": 5.5395,
+      "search": {
+        "seed_seconds": 0.855,
+        "seed_found": true,
+        "optimization_status": "FEASIBLE",
+        "initializer": "per_visit",
+        "attempts": [
+          {
+            "initializer": "per_visit",
+            "status": "FEASIBLE"
+          }
+        ]
+      },
+      "objective": 5051.0,
+      "best_bound": 2507.0,
+      "validation": {
+        "valid": true,
+        "errors": [],
+        "checked_visits": 200,
+        "metrics": {
+          "travel": 1406,
+          "idle": 753,
+          "care": 4050,
+          "working": 6209,
+          "breaks": 150,
+          "visits": 200
+        },
+        "continuity": {
+          "client_0": [
+            "carer_0_0",
+            "carer_1_0"
+          ],
+          "client_1": [
+            "carer_0_1",
+            "carer_1_1"
+          ],
+          "client_2": [
+            "carer_0_2",
+            "carer_1_2"
+          ],
+          "client_3": [
+            "carer_0_3",
+            "carer_1_3"
+          ],
+          "client_4": [
+            "carer_0_0",
+            "carer_1_0"
+          ],
+          "client_5": [
+            "carer_0_1",
+            "carer_1_1"
+          ],
+          "client_6": [
+            "carer_0_2",
+            "carer_1_2"
+          ],
+          "client_7": [
+            "carer_0_3",
+            "carer_1_3"
+          ],
+          "client_8": [
+            "carer_0_0",
+            "carer_1_0"
+          ],
+          "client_9": [
+            "carer_0_1",
+            "carer_1_1"
+          ],
+          "client_10": [
+            "carer_0_2",
+            "carer_1_2"
+          ],
+          "client_11": [
+            "carer_0_3",
+            "carer_1_3"
+          ],
+          "client_12": [
+            "carer_0_0",
+            "carer_1_0"
+          ],
+          "client_13": [
+            "carer_0_1",
+            "carer_1_1"
+          ],
+          "client_14": [
+            "carer_0_2",
+            "carer_1_2"
+          ],
+          "client_15": [
+            "carer_0_3",
+            "carer_1_3"
+          ],
+          "client_16": [
+            "carer_0_0",
+            "carer_1_0"
+          ],
+          "client_17": [
+            "carer_0_1",
+            "carer_1_1"
+          ],
+          "client_18": [
+            "carer_0_2",
+            "carer_1_2"
+          ],
+          "client_19": [
+            "carer_0_3",
+            "carer_1_3"
+          ],
+          "client_20": [
+            "carer_0_0",
+            "carer_1_0"
+          ],
+          "client_21": [
+            "carer_0_1",
+            "carer_1_1"
+          ],
+          "client_22": [
+            "carer_0_2",
+            "carer_1_2"
+          ],
+          "client_23": [
+            "carer_0_3",
+            "carer_1_3"
+          ],
+          "client_24": [
+            "carer_0_0",
+            "carer_1_0"
+          ],
+          "client_25": [
+            "carer_0_1",
+            "carer_1_1"
+          ],
+          "client_26": [
+            "carer_0_2",
+            "carer_1_2"
+          ],
+          "client_27": [
+            "carer_0_3",
+            "carer_1_3"
+          ],
+          "client_28": [
+            "carer_0_0",
+            "carer_1_0"
+          ],
+          "client_29": [
+            "carer_0_1",
+            "carer_1_1"
+          ],
+          "client_30": [
+            "carer_0_2",
+            "carer_1_2"
+          ],
+          "client_31": [
+            "carer_0_3",
+            "carer_1_3"
+          ],
+          "client_32": [
+            "carer_0_0",
+            "carer_1_0"
+          ],
+          "client_33": [
+            "carer_0_1",
+            "carer_1_1"
+          ],
+          "client_34": [
+            "carer_0_2",
+            "carer_1_2"
+          ],
+          "client_35": [
+            "carer_0_3",
+            "carer_1_3"
+          ],
+          "client_36": [
+            "carer_0_0",
+            "carer_1_0"
+          ],
+          "client_37": [
+            "carer_0_1",
+            "carer_1_1"
+          ],
+          "client_38": [
+            "carer_0_2",
+            "carer_1_2"
+          ],
+          "client_39": [
+            "carer_0_3",
+            "carer_1_3"
+          ]
+        },
+        "weekly_minutes": {
+          "carer_0_0": 876,
+          "carer_0_1": 940,
+          "carer_0_2": 852,
+          "carer_0_3": 1114,
+          "carer_1_0": 611,
+          "carer_1_1": 602,
+          "carer_1_2": 568,
+          "carer_1_3": 646
+        }
+      },
+      "completed_locks": 120
+    },
+    {
+      "profile": "locked_repair_16",
+      "seed": 20261021,
+      "revision": "v2",
+      "input_sha256": "65efbafe2bc104812db5b44dd6dc082779549cda65ffb9850bed044dc34d350d",
+      "search_limit": 5,
+      "workers": 1,
+      "status": "UNKNOWN",
+      "elapsed_seconds": 5.5569,
+      "search": {
+        "seed_seconds": 1.444,
+        "seed_found": false,
+        "optimization_status": "UNKNOWN"
+      },
+      "objective": null,
+      "best_bound": null,
+      "validation": null,
+      "completed_locks": 120
+    },
+    {
+      "profile": "locked_repair_16",
+      "seed": 20261021,
+      "revision": "v3",
+      "input_sha256": "65efbafe2bc104812db5b44dd6dc082779549cda65ffb9850bed044dc34d350d",
+      "search_limit": 5,
+      "workers": 1,
+      "status": "FEASIBLE",
+      "elapsed_seconds": 5.5454,
+      "search": {
+        "seed_seconds": 0.865,
+        "seed_found": true,
+        "optimization_status": "FEASIBLE",
+        "initializer": "per_visit",
+        "attempts": [
+          {
+            "initializer": "per_visit",
+            "status": "FEASIBLE"
+          }
+        ]
+      },
+      "objective": 5788.0,
+      "best_bound": 2990.0,
+      "validation": {
+        "valid": true,
+        "errors": [],
+        "checked_visits": 200,
+        "metrics": {
+          "travel": 1624,
+          "idle": 836,
+          "care": 3850,
+          "working": 6310,
+          "breaks": 300,
+          "visits": 200
+        },
+        "continuity": {
+          "client_0": [
+            "carer_0_0",
+            "carer_1_0"
+          ],
+          "client_1": [
+            "carer_0_1",
+            "carer_1_1"
+          ],
+          "client_2": [
+            "carer_0_2",
+            "carer_1_2"
+          ],
+          "client_3": [
+            "carer_0_3",
+            "carer_1_3"
+          ],
+          "client_4": [
+            "carer_0_0",
+            "carer_1_0"
+          ],
+          "client_5": [
+            "carer_0_1",
+            "carer_1_1"
+          ],
+          "client_6": [
+            "carer_0_2",
+            "carer_1_2"
+          ],
+          "client_7": [
+            "carer_0_3",
+            "carer_1_3"
+          ],
+          "client_8": [
+            "carer_0_0",
+            "carer_1_0"
+          ],
+          "client_9": [
+            "carer_0_1",
+            "carer_1_1"
+          ],
+          "client_10": [
+            "carer_0_2",
+            "carer_1_2"
+          ],
+          "client_11": [
+            "carer_0_3",
+            "carer_1_3"
+          ],
+          "client_12": [
+            "carer_0_0",
+            "carer_1_0"
+          ],
+          "client_13": [
+            "carer_0_1",
+            "carer_1_1"
+          ],
+          "client_14": [
+            "carer_0_2",
+            "carer_1_2"
+          ],
+          "client_15": [
+            "carer_0_3",
+            "carer_1_3"
+          ],
+          "client_16": [
+            "carer_0_0",
+            "carer_1_0"
+          ],
+          "client_17": [
+            "carer_0_1",
+            "carer_1_1"
+          ],
+          "client_18": [
+            "carer_0_2",
+            "carer_1_2"
+          ],
+          "client_19": [
+            "carer_0_3",
+            "carer_1_3"
+          ],
+          "client_20": [
+            "carer_0_0",
+            "carer_1_0"
+          ],
+          "client_21": [
+            "carer_0_1",
+            "carer_1_1"
+          ],
+          "client_22": [
+            "carer_0_2",
+            "carer_1_2"
+          ],
+          "client_23": [
+            "carer_0_3",
+            "carer_1_3"
+          ],
+          "client_24": [
+            "carer_0_0",
+            "carer_1_0"
+          ],
+          "client_25": [
+            "carer_0_1",
+            "carer_1_1"
+          ],
+          "client_26": [
+            "carer_0_2",
+            "carer_1_2"
+          ],
+          "client_27": [
+            "carer_0_3",
+            "carer_1_3"
+          ],
+          "client_28": [
+            "carer_0_0",
+            "carer_1_0"
+          ],
+          "client_29": [
+            "carer_0_1",
+            "carer_1_1"
+          ],
+          "client_30": [
+            "carer_0_2",
+            "carer_1_2"
+          ],
+          "client_31": [
+            "carer_0_3",
+            "carer_1_3"
+          ],
+          "client_32": [
+            "carer_0_0",
+            "carer_1_0"
+          ],
+          "client_33": [
+            "carer_0_1",
+            "carer_1_1"
+          ],
+          "client_34": [
+            "carer_0_2",
+            "carer_1_2"
+          ],
+          "client_35": [
+            "carer_0_3",
+            "carer_1_3"
+          ],
+          "client_36": [
+            "carer_0_0",
+            "carer_1_0"
+          ],
+          "client_37": [
+            "carer_0_1",
+            "carer_1_1"
+          ],
+          "client_38": [
+            "carer_0_2",
+            "carer_1_2"
+          ],
+          "client_39": [
+            "carer_0_3",
+            "carer_1_3"
+          ]
+        },
+        "weekly_minutes": {
+          "carer_0_0": 846,
+          "carer_0_1": 980,
+          "carer_0_2": 794,
+          "carer_0_3": 988,
+          "carer_1_0": 586,
+          "carer_1_1": 796,
+          "carer_1_2": 564,
+          "carer_1_3": 756
+        }
+      },
+      "completed_locks": 120
+    },
+    {
+      "profile": "varying_daily_times",
+      "seed": 20261019,
+      "revision": "v2",
+      "input_sha256": "ff8edcf6c9de3de4c368d7850a6b46012e97b4990c5aa4c27dd1b6b8490be248",
+      "search_limit": 5,
+      "workers": 1,
+      "status": "FEASIBLE",
+      "elapsed_seconds": 5.2676,
+      "search": {
+        "seed_seconds": 1.232,
+        "seed_found": false,
+        "optimization_status": "FEASIBLE"
+      },
+      "objective": 4565.0,
+      "best_bound": 123.0,
+      "validation": {
+        "valid": true,
+        "errors": [],
+        "checked_visits": 200,
+        "metrics": {
+          "travel": 1398,
+          "idle": 256,
+          "care": 4025,
+          "working": 5679,
+          "breaks": 540,
+          "visits": 200
+        },
+        "continuity": {
+          "client_0": [
+            "carer_0_2",
+            "carer_0_3",
+            "carer_1_0"
+          ],
+          "client_1": [
+            "carer_0_1",
+            "carer_0_3",
+            "carer_1_3"
+          ],
+          "client_2": [
+            "carer_0_0",
+            "carer_0_2",
+            "carer_1_2"
+          ],
+          "client_3": [
+            "carer_0_1",
+            "carer_1_0",
+            "carer_1_1"
+          ],
+          "client_4": [
+            "carer_0_0",
+            "carer_0_2",
+            "carer_1_2"
+          ],
+          "client_5": [
+            "carer_0_3",
+            "carer_1_1"
+          ],
+          "client_6": [
+            "carer_0_0",
+            "carer_0_2",
+            "carer_1_2"
+          ],
+          "client_7": [
+            "carer_0_1",
+            "carer_1_3"
+          ],
+          "client_8": [
+            "carer_0_0",
+            "carer_0_2",
+            "carer_1_2"
+          ],
+          "client_9": [
+            "carer_0_0",
+            "carer_0_3",
+            "carer_1_1"
+          ],
+          "client_10": [
+            "carer_0_0",
+            "carer_0_2",
+            "carer_1_0"
+          ],
+          "client_11": [
+            "carer_0_1",
+            "carer_0_3",
+            "carer_1_3"
+          ],
+          "client_12": [
+            "carer_0_0",
+            "carer_0_1",
+            "carer_1_0"
+          ],
+          "client_13": [
+            "carer_0_3",
+            "carer_1_1"
+          ],
+          "client_14": [
+            "carer_0_0",
+            "carer_0_2",
+            "carer_1_0"
+          ],
+          "client_15": [
+            "carer_0_0",
+            "carer_0_2",
+            "carer_1_0"
+          ],
+          "client_16": [
+            "carer_0_2",
+            "carer_1_2"
+          ],
+          "client_17": [
+            "carer_0_1",
+            "carer_0_3",
+            "carer_1_3"
+          ],
+          "client_18": [
+            "carer_0_1",
+            "carer_0_2",
+            "carer_1_2"
+          ],
+          "client_19": [
+            "carer_0_1",
+            "carer_0_3",
+            "carer_1_1"
+          ],
+          "client_20": [
+            "carer_0_0",
+            "carer_0_2",
+            "carer_1_2"
+          ],
+          "client_21": [
+            "carer_0_0",
+            "carer_1_0",
+            "carer_1_3"
+          ],
+          "client_22": [
+            "carer_0_0",
+            "carer_0_2",
+            "carer_1_0"
+          ],
+          "client_23": [
+            "carer_0_1",
+            "carer_0_3",
+            "carer_1_3"
+          ],
+          "client_24": [
+            "carer_0_0",
+            "carer_1_1",
+            "carer_1_2"
+          ],
+          "client_25": [
+            "carer_0_1",
+            "carer_0_3",
+            "carer_1_1"
+          ],
+          "client_26": [
+            "carer_0_2",
+            "carer_1_2"
+          ],
+          "client_27": [
+            "carer_0_1",
+            "carer_1_0",
+            "carer_1_3"
+          ],
+          "client_28": [
+            "carer_0_0",
+            "carer_0_2",
+            "carer_1_2"
+          ],
+          "client_29": [
+            "carer_0_3",
+            "carer_1_1",
+            "carer_1_3"
+          ],
+          "client_30": [
+            "carer_0_1",
+            "carer_1_0",
+            "carer_1_3"
+          ],
+          "client_31": [
+            "carer_0_3",
+            "carer_1_1",
+            "carer_1_3"
+          ],
+          "client_32": [
+            "carer_0_2",
+            "carer_1_0",
+            "carer_1_2"
+          ],
+          "client_33": [
+            "carer_0_1",
+            "carer_0_3",
+            "carer_1_3"
+          ],
+          "client_34": [
+            "carer_0_0",
+            "carer_0_2",
+            "carer_1_2"
+          ],
+          "client_35": [
+            "carer_0_1",
+            "carer_0_3",
+            "carer_1_1"
+          ],
+          "client_36": [
+            "carer_0_1",
+            "carer_0_3",
+            "carer_1_3"
+          ],
+          "client_37": [
+            "carer_0_1",
+            "carer_0_3",
+            "carer_1_1"
+          ],
+          "client_38": [
+            "carer_0_0",
+            "carer_0_2",
+            "carer_1_0"
+          ],
+          "client_39": [
+            "carer_0_0",
+            "carer_1_0",
+            "carer_1_3"
+          ]
+        },
+        "weekly_minutes": {
+          "carer_0_0": 843,
+          "carer_0_1": 880,
+          "carer_0_2": 866,
+          "carer_0_3": 820,
+          "carer_1_0": 613,
+          "carer_1_1": 522,
+          "carer_1_2": 539,
+          "carer_1_3": 596
+        }
+      },
+      "completed_locks": 0
+    },
+    {
+      "profile": "varying_daily_times",
+      "seed": 20261019,
+      "revision": "v3",
+      "input_sha256": "ff8edcf6c9de3de4c368d7850a6b46012e97b4990c5aa4c27dd1b6b8490be248",
+      "search_limit": 5,
+      "workers": 1,
+      "status": "FEASIBLE",
+      "elapsed_seconds": 5.2917,
+      "search": {
+        "seed_seconds": 1.161,
+        "seed_found": true,
+        "optimization_status": "FEASIBLE",
+        "initializer": "occurrence_model",
+        "attempts": [
+          {
+            "initializer": "per_visit",
+            "status": "INFEASIBLE"
+          },
+          {
+            "initializer": "occurrence_model",
+            "status": "FEASIBLE"
+          }
+        ]
+      },
+      "objective": 4285.0,
+      "best_bound": 120.0,
+      "validation": {
+        "valid": true,
+        "errors": [],
+        "checked_visits": 200,
+        "metrics": {
+          "travel": 1371,
+          "idle": 58,
+          "care": 4025,
+          "working": 5454,
+          "breaks": 420,
+          "visits": 200
+        },
+        "continuity": {
+          "client_0": [
+            "carer_0_0",
+            "carer_1_1",
+            "carer_1_3"
+          ],
+          "client_1": [
+            "carer_0_3",
+            "carer_1_1",
+            "carer_1_3"
+          ],
+          "client_2": [
+            "carer_0_2",
+            "carer_1_0"
+          ],
+          "client_3": [
+            "carer_0_0",
+            "carer_0_1",
+            "carer_1_2"
+          ],
+          "client_4": [
+            "carer_0_2",
+            "carer_1_0"
+          ],
+          "client_5": [
+            "carer_0_3",
+            "carer_1_1",
+            "carer_1_3"
+          ],
+          "client_6": [
+            "carer_0_1",
+            "carer_0_2",
+            "carer_1_0"
+          ],
+          "client_7": [
+            "carer_0_1",
+            "carer_0_3",
+            "carer_1_1"
+          ],
+          "client_8": [
+            "carer_0_2",
+            "carer_1_2"
+          ],
+          "client_9": [
+            "carer_0_0",
+            "carer_0_3",
+            "carer_1_3"
+          ],
+          "client_10": [
+            "carer_0_0",
+            "carer_0_2",
+            "carer_1_2"
+          ],
+          "client_11": [
+            "carer_0_1",
+            "carer_1_1"
+          ],
+          "client_12": [
+            "carer_0_0",
+            "carer_0_2",
+            "carer_1_1"
+          ],
+          "client_13": [
+            "carer_0_3",
+            "carer_1_1",
+            "carer_1_3"
+          ],
+          "client_14": [
+            "carer_0_0",
+            "carer_0_2",
+            "carer_1_0"
+          ],
+          "client_15": [
+            "carer_0_1",
+            "carer_1_2",
+            "carer_1_3"
+          ],
+          "client_16": [
+            "carer_0_0",
+            "carer_0_2",
+            "carer_1_0"
+          ],
+          "client_17": [
+            "carer_0_1",
+            "carer_0_3",
+            "carer_1_3"
+          ],
+          "client_18": [
+            "carer_0_0",
+            "carer_0_3",
+            "carer_1_0"
+          ],
+          "client_19": [
+            "carer_0_1",
+            "carer_0_3",
+            "carer_1_3"
+          ],
+          "client_20": [
+            "carer_0_0",
+            "carer_0_2",
+            "carer_1_2"
+          ],
+          "client_21": [
+            "carer_0_0",
+            "carer_1_0",
+            "carer_1_2"
+          ],
+          "client_22": [
+            "carer_0_0",
+            "carer_0_2",
+            "carer_1_2"
+          ],
+          "client_23": [
+            "carer_0_1",
+            "carer_0_3",
+            "carer_1_1"
+          ],
+          "client_24": [
+            "carer_0_0",
+            "carer_0_2",
+            "carer_1_2"
+          ],
+          "client_25": [
+            "carer_0_1",
+            "carer_0_3",
+            "carer_1_3"
+          ],
+          "client_26": [
+            "carer_0_0",
+            "carer_0_2",
+            "carer_1_0"
+          ],
+          "client_27": [
+            "carer_0_0",
+            "carer_0_3",
+            "carer_1_1"
+          ],
+          "client_28": [
+            "carer_0_0",
+            "carer_0_2",
+            "carer_1_2"
+          ],
+          "client_29": [
+            "carer_0_1",
+            "carer_0_3",
+            "carer_1_1"
+          ],
+          "client_30": [
+            "carer_0_1",
+            "carer_0_3",
+            "carer_1_0"
+          ],
+          "client_31": [
+            "carer_0_1",
+            "carer_1_1",
+            "carer_1_3"
+          ],
+          "client_32": [
+            "carer_0_0",
+            "carer_0_2",
+            "carer_1_2"
+          ],
+          "client_33": [
+            "carer_0_1",
+            "carer_1_0",
+            "carer_1_3"
+          ],
+          "client_34": [
+            "carer_0_0",
+            "carer_0_2",
+            "carer_1_0"
+          ],
+          "client_35": [
+            "carer_0_3",
+            "carer_1_3"
+          ],
+          "client_36": [
+            "carer_0_2",
+            "carer_0_3",
+            "carer_1_0"
+          ],
+          "client_37": [
+            "carer_0_1",
+            "carer_0_3",
+            "carer_1_3"
+          ],
+          "client_38": [
+            "carer_0_2",
+            "carer_1_2"
+          ],
+          "client_39": [
+            "carer_0_1",
+            "carer_0_3",
+            "carer_1_1"
+          ]
+        },
+        "weekly_minutes": {
+          "carer_0_0": 718,
+          "carer_0_1": 753,
+          "carer_0_2": 938,
+          "carer_0_3": 852,
+          "carer_1_0": 592,
+          "carer_1_1": 516,
+          "carer_1_2": 560,
+          "carer_1_3": 525
+        }
+      },
+      "completed_locks": 0
+    },
+    {
+      "profile": "varying_daily_times",
+      "seed": 20261020,
+      "revision": "v2",
+      "input_sha256": "7a260d85f6263eededa0f44ac588ef15cc8ebbade5a0352e76e185c69e9dfb4e",
+      "search_limit": 5,
+      "workers": 1,
+      "status": "UNKNOWN",
+      "elapsed_seconds": 5.3345,
+      "search": {
+        "seed_seconds": 1.263,
+        "seed_found": false,
+        "optimization_status": "UNKNOWN"
+      },
+      "objective": null,
+      "best_bound": null,
+      "validation": null,
+      "completed_locks": 0
+    },
+    {
+      "profile": "varying_daily_times",
+      "seed": 20261020,
+      "revision": "v3",
+      "input_sha256": "7a260d85f6263eededa0f44ac588ef15cc8ebbade5a0352e76e185c69e9dfb4e",
+      "search_limit": 5,
+      "workers": 1,
+      "status": "FEASIBLE",
+      "elapsed_seconds": 5.3292,
+      "search": {
+        "seed_seconds": 1.183,
+        "seed_found": true,
+        "optimization_status": "FEASIBLE",
+        "initializer": "occurrence_model",
+        "attempts": [
+          {
+            "initializer": "per_visit",
+            "status": "INFEASIBLE"
+          },
+          {
+            "initializer": "occurrence_model",
+            "status": "FEASIBLE"
+          }
+        ]
+      },
+      "objective": 3787.0,
+      "best_bound": 189.0,
+      "validation": {
+        "valid": true,
+        "errors": [],
+        "checked_visits": 200,
+        "metrics": {
+          "travel": 1219,
+          "idle": 22,
+          "care": 4050,
+          "working": 5291,
+          "breaks": 210,
+          "visits": 200
+        },
+        "continuity": {
+          "client_0": [
+            "carer_0_0",
+            "carer_0_2",
+            "carer_1_0"
+          ],
+          "client_1": [
+            "carer_0_3",
+            "carer_1_1",
+            "carer_1_3"
+          ],
+          "client_2": [
+            "carer_0_0",
+            "carer_0_2",
+            "carer_1_2"
+          ],
+          "client_3": [
+            "carer_0_1",
+            "carer_1_1",
+            "carer_1_3"
+          ],
+          "client_4": [
+            "carer_0_2",
+            "carer_1_0",
+            "carer_1_2"
+          ],
+          "client_5": [
+            "carer_0_1",
+            "carer_1_3"
+          ],
+          "client_6": [
+            "carer_0_0",
+            "carer_1_1",
+            "carer_1_2"
+          ],
+          "client_7": [
+            "carer_0_3",
+            "carer_1_3"
+          ],
+          "client_8": [
+            "carer_0_2",
+            "carer_1_2"
+          ],
+          "client_9": [
+            "carer_0_1",
+            "carer_0_3",
+            "carer_1_1"
+          ],
+          "client_10": [
+            "carer_0_0",
+            "carer_0_2",
+            "carer_1_0"
+          ],
+          "client_11": [
+            "carer_0_1",
+            "carer_0_3",
+            "carer_1_3"
+          ],
+          "client_12": [
+            "carer_0_2",
+            "carer_0_3",
+            "carer_1_0"
+          ],
+          "client_13": [
+            "carer_0_1",
+            "carer_0_3",
+            "carer_1_1"
+          ],
+          "client_14": [
+            "carer_0_0",
+            "carer_0_2",
+            "carer_1_2"
+          ],
+          "client_15": [
+            "carer_0_1",
+            "carer_1_1",
+            "carer_1_3"
+          ],
+          "client_16": [
+            "carer_0_2",
+            "carer_1_0",
+            "carer_1_2"
+          ],
+          "client_17": [
+            "carer_0_1",
+            "carer_0_3",
+            "carer_1_1"
+          ],
+          "client_18": [
+            "carer_0_0",
+            "carer_1_0",
+            "carer_1_2"
+          ],
+          "client_19": [
+            "carer_0_1",
+            "carer_0_3",
+            "carer_1_3"
+          ],
+          "client_20": [
+            "carer_0_0",
+            "carer_1_2"
+          ],
+          "client_21": [
+            "carer_0_2",
+            "carer_0_3",
+            "carer_1_0"
+          ],
+          "client_22": [
+            "carer_0_2",
+            "carer_1_0",
+            "carer_1_2"
+          ],
+          "client_23": [
+            "carer_0_1",
+            "carer_0_3",
+            "carer_1_3"
+          ],
+          "client_24": [
+            "carer_0_0",
+            "carer_1_0"
+          ],
+          "client_25": [
+            "carer_0_3",
+            "carer_1_1"
+          ],
+          "client_26": [
+            "carer_0_2",
+            "carer_1_2"
+          ],
+          "client_27": [
+            "carer_0_1",
+            "carer_1_1"
+          ],
+          "client_28": [
+            "carer_0_0",
+            "carer_0_2",
+            "carer_1_2"
+          ],
+          "client_29": [
+            "carer_0_3",
+            "carer_1_3"
+          ],
+          "client_30": [
+            "carer_0_0",
+            "carer_1_1",
+            "carer_1_2"
+          ],
+          "client_31": [
+            "carer_0_1",
+            "carer_0_3",
+            "carer_1_1"
+          ],
+          "client_32": [
+            "carer_0_2",
+            "carer_1_0"
+          ],
+          "client_33": [
+            "carer_0_1",
+            "carer_0_3",
+            "carer_1_3"
+          ],
+          "client_34": [
+            "carer_0_0",
+            "carer_1_0",
+            "carer_1_2"
+          ],
+          "client_35": [
+            "carer_0_3",
+            "carer_1_1",
+            "carer_1_3"
+          ],
+          "client_36": [
+            "carer_0_0",
+            "carer_1_0"
+          ],
+          "client_37": [
+            "carer_0_1",
+            "carer_1_1"
+          ],
+          "client_38": [
+            "carer_0_0",
+            "carer_0_2",
+            "carer_1_2"
+          ],
+          "client_39": [
+            "carer_0_0",
+            "carer_0_3",
+            "carer_1_1"
+          ]
+        },
+        "weekly_minutes": {
+          "carer_0_0": 827,
+          "carer_0_1": 798,
+          "carer_0_2": 767,
+          "carer_0_3": 810,
+          "carer_1_0": 500,
+          "carer_1_1": 573,
+          "carer_1_2": 539,
+          "carer_1_3": 477
+        }
+      },
+      "completed_locks": 0
+    },
+    {
+      "profile": "varying_daily_times",
+      "seed": 20261021,
+      "revision": "v2",
+      "input_sha256": "46c3d8c824f0973a466bb0253d4b32c29adbddae7d9ea8340013dc95d6a22f5c",
+      "search_limit": 5,
+      "workers": 1,
+      "status": "FEASIBLE",
+      "elapsed_seconds": 5.2741,
+      "search": {
+        "seed_seconds": 1.238,
+        "seed_found": false,
+        "optimization_status": "FEASIBLE"
+      },
+      "objective": 4325.0,
+      "best_bound": 187.0,
+      "validation": {
+        "valid": true,
+        "errors": [],
+        "checked_visits": 200,
+        "metrics": {
+          "travel": 1236,
+          "idle": 501,
+          "care": 3850,
+          "working": 5587,
+          "breaks": 420,
+          "visits": 200
+        },
+        "continuity": {
+          "client_0": [
+            "carer_0_0",
+            "carer_0_1",
+            "carer_1_2"
+          ],
+          "client_1": [
+            "carer_0_1",
+            "carer_1_3"
+          ],
+          "client_2": [
+            "carer_0_0",
+            "carer_0_2",
+            "carer_1_0"
+          ],
+          "client_3": [
+            "carer_0_2",
+            "carer_0_3",
+            "carer_1_1"
+          ],
+          "client_4": [
+            "carer_0_0",
+            "carer_0_2",
+            "carer_1_2"
+          ],
+          "client_5": [
+            "carer_0_1",
+            "carer_0_3",
+            "carer_1_3"
+          ],
+          "client_6": [
+            "carer_0_1",
+            "carer_0_2",
+            "carer_1_0"
+          ],
+          "client_7": [
+            "carer_0_3",
+            "carer_1_1"
+          ],
+          "client_8": [
+            "carer_0_0",
+            "carer_0_2",
+            "carer_1_2"
+          ],
+          "client_9": [
+            "carer_0_1",
+            "carer_1_1"
+          ],
+          "client_10": [
+            "carer_0_0",
+            "carer_0_2",
+            "carer_1_2"
+          ],
+          "client_11": [
+            "carer_0_3",
+            "carer_1_3"
+          ],
+          "client_12": [
+            "carer_0_0",
+            "carer_0_1",
+            "carer_1_0"
+          ],
+          "client_13": [
+            "carer_0_1",
+            "carer_0_3",
+            "carer_1_1"
+          ],
+          "client_14": [
+            "carer_0_0",
+            "carer_0_2",
+            "carer_1_0"
+          ],
+          "client_15": [
+            "carer_0_2",
+            "carer_0_3",
+            "carer_1_3"
+          ],
+          "client_16": [
+            "carer_0_0",
+            "carer_0_2",
+            "carer_1_0"
+          ],
+          "client_17": [
+            "carer_0_1",
+            "carer_0_3",
+            "carer_1_1"
+          ],
+          "client_18": [
+            "carer_0_2",
+            "carer_1_2",
+            "carer_1_3"
+          ],
+          "client_19": [
+            "carer_0_3",
+            "carer_1_1",
+            "carer_1_3"
+          ],
+          "client_20": [
+            "carer_0_0",
+            "carer_1_0",
+            "carer_1_2"
+          ],
+          "client_21": [
+            "carer_0_0",
+            "carer_0_1",
+            "carer_1_3"
+          ],
+          "client_22": [
+            "carer_0_0",
+            "carer_0_2",
+            "carer_1_0"
+          ],
+          "client_23": [
+            "carer_0_1",
+            "carer_0_3",
+            "carer_1_1"
+          ],
+          "client_24": [
+            "carer_0_0",
+            "carer_0_2",
+            "carer_1_2"
+          ],
+          "client_25": [
+            "carer_0_1",
+            "carer_0_3",
+            "carer_1_3"
+          ],
+          "client_26": [
+            "carer_0_2",
+            "carer_1_0",
+            "carer_1_2"
+          ],
+          "client_27": [
+            "carer_0_0",
+            "carer_1_2",
+            "carer_1_3"
+          ],
+          "client_28": [
+            "carer_0_0",
+            "carer_0_2",
+            "carer_1_2"
+          ],
+          "client_29": [
+            "carer_0_1",
+            "carer_1_1",
+            "carer_1_3"
+          ],
+          "client_30": [
+            "carer_0_1",
+            "carer_0_3",
+            "carer_1_1"
+          ],
+          "client_31": [
+            "carer_0_1",
+            "carer_0_3",
+            "carer_1_1"
+          ],
+          "client_32": [
+            "carer_0_0",
+            "carer_0_2",
+            "carer_1_0"
+          ],
+          "client_33": [
+            "carer_0_1",
+            "carer_0_3",
+            "carer_1_2"
+          ],
+          "client_34": [
+            "carer_0_0",
+            "carer_0_2",
+            "carer_1_0"
+          ],
+          "client_35": [
+            "carer_0_1",
+            "carer_0_3",
+            "carer_1_1"
+          ],
+          "client_36": [
+            "carer_0_0",
+            "carer_0_2",
+            "carer_1_2"
+          ],
+          "client_37": [
+            "carer_0_1",
+            "carer_0_3",
+            "carer_1_1"
+          ],
+          "client_38": [
+            "carer_0_0",
+            "carer_0_2",
+            "carer_1_0"
+          ],
+          "client_39": [
+            "carer_0_0",
+            "carer_0_3",
+            "carer_1_0"
+          ]
+        },
+        "weekly_minutes": {
+          "carer_0_0": 889,
+          "carer_0_1": 874,
+          "carer_0_2": 757,
+          "carer_0_3": 841,
+          "carer_1_0": 584,
+          "carer_1_1": 605,
+          "carer_1_2": 535,
+          "carer_1_3": 502
+        }
+      },
+      "completed_locks": 0
+    },
+    {
+      "profile": "varying_daily_times",
+      "seed": 20261021,
+      "revision": "v3",
+      "input_sha256": "46c3d8c824f0973a466bb0253d4b32c29adbddae7d9ea8340013dc95d6a22f5c",
+      "search_limit": 5,
+      "workers": 1,
+      "status": "FEASIBLE",
+      "elapsed_seconds": 5.3883,
+      "search": {
+        "seed_seconds": 1.177,
+        "seed_found": true,
+        "optimization_status": "FEASIBLE",
+        "initializer": "occurrence_model",
+        "attempts": [
+          {
+            "initializer": "per_visit",
+            "status": "INFEASIBLE"
+          },
+          {
+            "initializer": "occurrence_model",
+            "status": "FEASIBLE"
+          }
+        ]
+      },
+      "objective": 4205.0,
+      "best_bound": 129.0,
+      "validation": {
+        "valid": true,
+        "errors": [],
+        "checked_visits": 200,
+        "metrics": {
+          "travel": 1310,
+          "idle": 163,
+          "care": 3850,
+          "working": 5323,
+          "breaks": 330,
+          "visits": 200
+        },
+        "continuity": {
+          "client_0": [
+            "carer_0_0",
+            "carer_0_2",
+            "carer_1_0"
+          ],
+          "client_1": [
+            "carer_0_1",
+            "carer_0_3",
+            "carer_1_3"
+          ],
+          "client_2": [
+            "carer_0_2",
+            "carer_1_2"
+          ],
+          "client_3": [
+            "carer_0_1",
+            "carer_0_3",
+            "carer_1_1"
+          ],
+          "client_4": [
+            "carer_0_0",
+            "carer_1_0"
+          ],
+          "client_5": [
+            "carer_0_1",
+            "carer_0_3",
+            "carer_1_3"
+          ],
+          "client_6": [
+            "carer_0_2",
+            "carer_1_0",
+            "carer_1_3"
+          ],
+          "client_7": [
+            "carer_0_1",
+            "carer_0_3",
+            "carer_1_1"
+          ],
+          "client_8": [
+            "carer_0_0",
+            "carer_1_2"
+          ],
+          "client_9": [
+            "carer_0_1",
+            "carer_1_0",
+            "carer_1_2"
+          ],
+          "client_10": [
+            "carer_0_2",
+            "carer_1_0",
+            "carer_1_2"
+          ],
+          "client_11": [
+            "carer_0_3",
+            "carer_1_1",
+            "carer_1_3"
+          ],
+          "client_12": [
+            "carer_0_0",
+            "carer_1_1"
+          ],
+          "client_13": [
+            "carer_0_1",
+            "carer_0_3",
+            "carer_1_3"
+          ],
+          "client_14": [
+            "carer_0_2",
+            "carer_1_0",
+            "carer_1_2"
+          ],
+          "client_15": [
+            "carer_0_1",
+            "carer_0_3",
+            "carer_1_1"
+          ],
+          "client_16": [
+            "carer_0_0",
+            "carer_0_2",
+            "carer_1_2"
+          ],
+          "client_17": [
+            "carer_0_1",
+            "carer_0_3",
+            "carer_1_3"
+          ],
+          "client_18": [
+            "carer_0_1",
+            "carer_0_2",
+            "carer_1_0"
+          ],
+          "client_19": [
+            "carer_0_3",
+            "carer_1_3"
+          ],
+          "client_20": [
+            "carer_0_0",
+            "carer_1_0",
+            "carer_1_2"
+          ],
+          "client_21": [
+            "carer_0_1",
+            "carer_1_2",
+            "carer_1_3"
+          ],
+          "client_22": [
+            "carer_0_0",
+            "carer_0_2",
+            "carer_1_2"
+          ],
+          "client_23": [
+            "carer_0_3",
+            "carer_1_1"
+          ],
+          "client_24": [
+            "carer_0_0",
+            "carer_1_0",
+            "carer_1_2"
+          ],
+          "client_25": [
+            "carer_0_1",
+            "carer_1_1",
+            "carer_1_3"
+          ],
+          "client_26": [
+            "carer_0_2",
+            "carer_1_2"
+          ],
+          "client_27": [
+            "carer_0_0",
+            "carer_0_3",
+            "carer_1_0"
+          ],
+          "client_28": [
+            "carer_0_0",
+            "carer_0_2",
+            "carer_1_2"
+          ],
+          "client_29": [
+            "carer_0_1",
+            "carer_1_1"
+          ],
+          "client_30": [
+            "carer_0_1",
+            "carer_0_2",
+            "carer_1_0"
+          ],
+          "client_31": [
+            "carer_0_3",
+            "carer_1_1",
+            "carer_1_3"
+          ],
+          "client_32": [
+            "carer_0_0",
+            "carer_0_2",
+            "carer_1_0"
+          ],
+          "client_33": [
+            "carer_0_0",
+            "carer_0_3",
+            "carer_1_3"
+          ],
+          "client_34": [
+            "carer_0_0",
+            "carer_0_2",
+            "carer_1_2"
+          ],
+          "client_35": [
+            "carer_0_1",
+            "carer_0_3",
+            "carer_1_1"
+          ],
+          "client_36": [
+            "carer_0_0",
+            "carer_0_1",
+            "carer_1_3"
+          ],
+          "client_37": [
+            "carer_0_1",
+            "carer_0_3",
+            "carer_1_3"
+          ],
+          "client_38": [
+            "carer_0_0",
+            "carer_0_2",
+            "carer_1_2"
+          ],
+          "client_39": [
+            "carer_0_0",
+            "carer_0_1",
+            "carer_1_0"
+          ]
+        },
+        "weekly_minutes": {
+          "carer_0_0": 768,
+          "carer_0_1": 880,
+          "carer_0_2": 696,
+          "carer_0_3": 816,
+          "carer_1_0": 581,
+          "carer_1_1": 470,
+          "carer_1_2": 520,
+          "carer_1_3": 592
+        }
+      },
+      "completed_locks": 0
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+name: Tests
+on:
+  push:
+  pull_request:
+permissions:
+  contents: read
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+          cache: pip
+      - run: pip install -r requirements-dev.txt
+      - run: python -m pytest -q
+      - name: Check container build
+        run: docker build -t homecare-demo .
+      - name: Check container health and portable Excel export
+        run: |
+          docker run -d --name homecare -p 10000:10000 homecare-demo
+          trap 'docker logs homecare; docker rm -f homecare' EXIT
+          for attempt in $(seq 1 30); do
+            if curl --fail --silent http://127.0.0.1:10000/api/health; then break; fi
+            sleep 1
+          done
+          python scripts/deployment_smoke.py http://127.0.0.1:10000

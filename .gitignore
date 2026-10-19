@@ -1,0 +1,17 @@
+.venv/
+__pycache__/
+.pytest_cache/
+*.pyc
+demo-results.json
+.routing-cache/
+.geocoding-cache/
+excel/node_modules
+.excel-runtime.json
+.env
+.env.*
+!.env.example
+*.log
+.DS_Store
+**/.pytest_cache/
+**/__pycache__/
+simulation-runs/
