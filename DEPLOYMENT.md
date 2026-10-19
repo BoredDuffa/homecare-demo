@@ -26,7 +26,7 @@ Open **http://127.0.0.1:8765**. Configure your host to build the root Dockerfile
 
 `HOMECARE_SOLVER_WORKERS` accepts 1–4, defaulting to one in the Docker image. Use one for modest hosting. Simultaneous solve requests receive an explicit busy response rather than starting multiple solvers. Excel uses `openpyxl`; no private Node runtime is needed.
 
-GitHub Actions runs the tests, builds the container and checks the packaged UI, solver, workbook import and workbook result export. That is a packaging check, not proof of a completed Render deployment.
+The GitHub Actions workflow is configured to run the tests, build the container and check the packaged UI, solver, workbook import and workbook result export. That is a packaging check, not proof of a completed Render deployment.
 
 ## Demo data and services
 
